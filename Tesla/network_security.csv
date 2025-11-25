@@ -1,0 +1,2 @@
+"NO","SCOPE","SEVERITY","DESCRIPTION"
+"1","192.168.92.1                                                    localhost","high","Domain config is insecurely configured to permit clear text traffic to these domains in scope."
