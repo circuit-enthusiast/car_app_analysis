@@ -15,3 +15,6 @@ This repository aggregates static analysis data for a corpus of North American a
 | Kia | MyKia | `com.kia.eu.mykia` | 3.0.0 |
 | Jeep | Jeep | `com.fca.myconnect.nafta` | 1.98.9 |
 | Tesla | Tesla | `com.teslamotors.tesla` | 4.50.1 |
+| Chevrolet | myChevrolet | `com.gm.chevrolet.nomad.ownership` | 6.25.0 |
+| Acura | AcuraLink | `com.acura.acuralink.connect` | 5.0.46 |
+
