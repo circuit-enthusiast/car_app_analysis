@@ -1,0 +1,3 @@
+"NO","SCOPE","SEVERITY","DESCRIPTION"
+"1","ext-api.nafta.fcagsdp.com:8443","info","Domain config is configured to trust bundled certs @raw/ignite_naft."
+"2","ext-api.nafta.fcagsdp.com:8443","secure","Certificate pinning does not have an expiry. Ensure that pins are updated before certificate expire. [Pin: IDFDH3tcOvIbG0+bLBiv9m+u4cJITbjwBMayaTKuWE8= Digest: SHA-256]"
