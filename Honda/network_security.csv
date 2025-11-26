@@ -1,0 +1,2 @@
+"NO","SCOPE","SEVERITY","DESCRIPTION"
+"1","wsc.hondaweb.com","high","Domain config is insecurely configured to permit clear text traffic to these domains in scope."
