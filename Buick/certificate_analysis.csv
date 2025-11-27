@@ -1,0 +1,3 @@
+"TITLE","SEVERITY","DESCRIPTION"
+"Certificate algorithm might be vulnerable to hash collision","warning","Application is signed with SHA1withRSA. SHA1 hash algorithm is known to have collision issues. The manifest file indicates SHA256withRSA is in use."
+"Signed Application","info","Application is signed with a code signing certificate"

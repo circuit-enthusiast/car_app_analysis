@@ -1,0 +1,3 @@
+"TITLE","SEVERITY","DESCRIPTION"
+"Certificate algorithm vulnerable to hash collision","high","Application is signed with MD5. MD5 hash algorithm is known to have collision issues."
+"Signed Application","info","Application is signed with a code signing certificate"

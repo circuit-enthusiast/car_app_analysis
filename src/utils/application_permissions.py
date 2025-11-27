@@ -1,6 +1,8 @@
 from pathlib import Path
 from typing import Iterable
 import sys
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import pandas as pd
 from matplotlib.ticker import MaxNLocator

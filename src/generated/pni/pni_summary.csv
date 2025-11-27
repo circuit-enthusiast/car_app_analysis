@@ -1,0 +1,15 @@
+manufacturer,total_score,grade,label,data_collection,data_usage,user_control,security,transparency,sells_data,shares_for_marketing,known_breaches,privacy_warning
+Toyota,40,C,Caution Advised,0,18,10,12,0,False,False,False,True
+Acura,39,D,Privacy Concerns,8,18,7,6,0,False,False,True,True
+Jeep,37,D,Privacy Concerns,3,18,10,6,0,False,False,True,True
+Audi,34,D,Privacy Concerns,8,10,10,6,0,False,True,True,True
+Nissan,32,D,Privacy Concerns,8,0,15,6,3,True,True,True,True
+Ford,31,D,Privacy Concerns,5,10,10,6,0,False,True,True,True
+BMW,29,D,Privacy Concerns,3,10,10,6,0,False,True,True,True
+Honda,21,D,Privacy Concerns,8,0,7,6,0,True,True,True,True
+Mercedes,19,F,Privacy Not Included,3,0,10,6,0,True,True,True,True
+Buick,16,F,Privacy Not Included,0,0,10,6,0,True,True,True,True
+Chevrolet,16,F,Privacy Not Included,0,0,10,6,0,True,True,True,True
+Kia,16,F,Privacy Not Included,0,0,10,6,0,True,True,True,True
+Subaru,16,F,Privacy Not Included,0,0,10,6,0,True,True,True,True
+Tesla,16,F,Privacy Not Included,0,0,10,6,0,True,True,True,True
