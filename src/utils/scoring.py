@@ -11,6 +11,7 @@ DEFAULT_STATUS_MAPPING: Mapping[str, str] = {
     "normal": "normal",
     "secure": "normal",
     "info": "normal",
+    "warning": "medium",
 }
 
 def normalize_token(value: object) -> str:

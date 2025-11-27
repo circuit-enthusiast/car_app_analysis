@@ -10,6 +10,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 from apps import available_apps
+from utils import scoring
 
 PROJECT_ROOT = SRC_PATH.parent
 GENERATED_ROOT = SRC_PATH / "generated"
@@ -31,8 +32,15 @@ def handle_score_network_security(dataframe: pd.DataFrame) -> dict[str, int]:
     # normalize severity values
     sev_series = sev_col.fillna("unknown").astype(str).str.strip().str.lower()
     counts = sev_series.value_counts().to_dict()
+
+    # Map severity to the scoring module's risk levels
+    mapped_counts: dict[str, int] = {}
+    for sev, count in counts.items():
+        risk_level = scoring.map_to_risk(sev)
+        mapped_counts[risk_level] = mapped_counts.get(risk_level, 0) + count
+
     # ensure keys are str
-    return {str(k): int(v) for k, v in counts.items()}
+    return {str(k): int(v) for k, v in mapped_counts.items()}
 
 
 def load_network_counts(base_path: Path = PROJECT_ROOT) -> dict[str, dict[str, int]]:
