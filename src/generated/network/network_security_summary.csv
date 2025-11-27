@@ -1,0 +1,11 @@
+manufacturer,high,medium,normal,total,score
+Acura,1,0,0,1,2
+Audi,1,0,30,31,2
+BMW,0,0,15,15,0
+Chevrolet,1,1,0,2,3
+Jeep,0,0,2,2,0
+Kia,0,0,0,0,0
+Mercedes,0,0,15,15,0
+Tesla,1,0,0,1,2
+Honda,1,0,0,1,2
+Subaru,1,0,0,1,2

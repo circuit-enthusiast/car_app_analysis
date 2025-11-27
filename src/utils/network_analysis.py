@@ -103,6 +103,36 @@ def save_network_bar_chart(
     return output_path
 
 
+def save_network_summary_csv(counts: Mapping[str, Mapping[str, int]], output_path: Path) -> Path:
+    if not counts:
+        raise ValueError("No network counts provided")
+
+    rows = []
+    for m, sevmap in counts.items():
+        high = int(sevmap.get("high", 0))
+        medium = int(sevmap.get("medium", 0))
+        normal = int(sevmap.get("normal", 0))
+        total = high + medium + normal
+        score = int(scoring.weighted_score({"high": high, "medium": medium, "normal": normal}))
+        rows.append(
+            {
+                "manufacturer": m,
+                "high": high,
+                "medium": medium,
+                "normal": normal,
+                "total": total,
+                "score": score,
+            }
+        )
+
+    df = pd.DataFrame(rows)
+    # ensure consistent column order
+    df = df[["manufacturer", "high", "medium", "normal", "total", "score"]]
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    df.to_csv(output_path, index=False)
+    return output_path
+
+
 def generate_network_report(base_path: Path = PROJECT_ROOT) -> Path | None:
     counts = load_network_counts(base_path)
     if not counts:
@@ -111,13 +141,24 @@ def generate_network_report(base_path: Path = PROJECT_ROOT) -> Path | None:
     output_path.parent.mkdir(parents=True, exist_ok=True)
     if output_path.exists():
         output_path.unlink()
-    return save_network_bar_chart(counts, output_path)
+
+    # save chart
+    chart_path = save_network_bar_chart(counts, output_path)
+
+    # save summary CSV alongside the chart
+    csv_path = NETWORK_DIR / "network_security_summary.csv"
+    if csv_path.exists():
+        csv_path.unlink()
+    save_network_summary_csv(counts, csv_path)
+
+    return chart_path
 
 
 if __name__ == "__main__":
     path = generate_network_report()
     if path:
         print(f"Saved network chart to {path}")
+        print(f"Saved summary CSV to {NETWORK_DIR / 'network_security_summary.csv'}")
         # also print a brief severity table for CLI users
         counts = load_network_counts()
         for m, sevmap in counts.items():
