@@ -20,8 +20,8 @@ This repository aggregates static analysis data for a corpus of North American a
 | Mercedes | Mercedes-Benz Connect | `com.daimler.ris.mercedesme.ece.android` | 1.62.0 |
 | BMW | My BMW | `de.bmw.connected.mobile20.na` | 5.9.4 |
 | Buick | myBuick | `com.gm.buick.nomad.ownership` | 6.25.0 |
-| Ford | | | |
+| Ford | FordPass | `https://fordpass.en.uptodown.com` | 6.9.4 |
 | Honda | | | |
 | Nissan | NissanConnect® EV & Services | `com.aqsmartphone.android.nissan` | 8.0.4 |
 | Subaru | | | |
-| Toyota | | | |
+| Toyota | myToyota | `com.toyota.oneapp.eu` | 2.8.1 |
