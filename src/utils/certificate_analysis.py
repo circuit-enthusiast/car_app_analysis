@@ -23,23 +23,19 @@ def handle_score_certificate_analysis(dataframe: pd.DataFrame) -> dict[str, int]
     if "SEVERITY" not in dataframe.columns and "severity" not in dataframe.columns:
         return {"unknown": len(dataframe)}
 
-    # accept either uppercase or lowercase column
     if "SEVERITY" in dataframe.columns:
         sev_col = dataframe["SEVERITY"]
     else:
         sev_col = dataframe["severity"]
 
-    # normalize severity values
     sev_series = sev_col.fillna("unknown").astype(str).str.strip().str.lower()
     counts = sev_series.value_counts().to_dict()
 
-    # Map severity to the scoring module's risk levels
     mapped_counts: dict[str, int] = {}
     for sev, count in counts.items():
         risk_level = scoring.map_to_risk(sev)
         mapped_counts[risk_level] = mapped_counts.get(risk_level, 0) + count
 
-    # ensure keys are str
     return {str(k): int(v) for k, v in mapped_counts.items()}
 
 
@@ -66,26 +62,22 @@ def save_certificate_bar_chart(
         output_path.unlink()
 
     manufacturers = list(counts.keys())
-    # determine the full set of severities across all manufacturers
     severity_set = set()
     for m in manufacturers:
         severity_set.update(counts[m].keys())
     severities = sorted(severity_set)
 
-    # build stacked values per severity
     values_by_sev = {sev: [counts[m].get(sev, 0) for m in manufacturers] for sev in severities}
 
     x_positions = list(range(len(manufacturers)))
 
     fig, ax = plt.subplots(figsize=(max(6, len(manufacturers) * 0.9), 5))
 
-    # choose colors: high=red, medium=orange, normal=blue
     color_map = {
         "high": "#d62728",
         "medium": "#ff7f0e",
         "normal": "#2b77ae",
     }
-    # fallback palette for other severity levels
     fallback_palette = ["#abf301", "#9467bd", "#8c564b"]
 
     bottom = [0] * len(manufacturers)
@@ -131,7 +123,6 @@ def save_certificate_summary_csv(counts: Mapping[str, Mapping[str, int]], output
         )
 
     df = pd.DataFrame(rows)
-    # ensure consistent column order
     df = df[["manufacturer", "high", "medium", "normal", "total", "score"]]
     output_path.parent.mkdir(parents=True, exist_ok=True)
     df.to_csv(output_path, index=False)
@@ -147,10 +138,8 @@ def generate_certificate_report(base_path: Path = PROJECT_ROOT) -> Path | None:
     if output_path.exists():
         output_path.unlink()
 
-    # save chart
     chart_path = save_certificate_bar_chart(counts, output_path)
 
-    # save summary CSV alongside the chart
     csv_path = CERTIFICATES_DIR / "certificate_security_summary.csv"
     if csv_path.exists():
         csv_path.unlink()
@@ -164,7 +153,6 @@ if __name__ == "__main__":
     if path:
         print(f"Saved certificate chart to {path}")
         print(f"Saved summary CSV to {CERTIFICATES_DIR / 'certificate_security_summary.csv'}")
-        # also print a brief severity table for CLI users
         counts = load_certificate_counts()
         for m, sevmap in counts.items():
             print(f"{m}:")
