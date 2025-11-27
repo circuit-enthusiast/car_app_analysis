@@ -1,5 +1,5 @@
 from pathlib import Path
-from utils import application_permissions, trackers, certificate_analysis, network_analysis
+from utils import application_permissions, trackers, certificate_analysis, network_analysis, pni_scoring
 
 BASE_PATH = Path(__file__).resolve().parents[1]
 SUBSCRIPTS = (
@@ -7,7 +7,7 @@ SUBSCRIPTS = (
     ("application_permissions", application_permissions.generate_permissions_reports),
     ("certificate_analysis", certificate_analysis.generate_certificate_report),
     ("network_analysis", network_analysis.generate_network_report),
-
+    ("pni_scoring", pni_scoring.generate_pni_report),
 )
 
 def run_subscripts(base_path: Path = BASE_PATH) -> None:

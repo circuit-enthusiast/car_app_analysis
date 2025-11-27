@@ -4,13 +4,17 @@ MANUFACTURER_DIRS = (
     "Acura",
     "Audi",
     "BMW",
+    "Buick",
     "Chevrolet",
+    "Ford",
+    "Honda",
     "Jeep",
     "Kia",
     "Mercedes",
-    "Tesla",
-    "Honda",
+    "Nissan",
     "Subaru",
+    "Tesla",
+    "Toyota",
 )
 
 def available_apps(base_path: Path = Path(__file__).resolve().parents[1]) -> list[str]:
