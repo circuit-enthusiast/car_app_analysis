@@ -19,3 +19,9 @@ This repository aggregates static analysis data for a corpus of North American a
 | Acura | AcuraLink | `com.acura.acuralink.connect` | 5.0.46 |
 | Mercedes | Mercedes-Benz Connect | `com.daimler.ris.mercedesme.ece.android` | 1.62.0 |
 | BMW | My BMW | `de.bmw.connected.mobile20.na` | 5.9.4 |
+| Buick | myBuick | `com.gm.buick.nomad.ownership` | 6.25.0 |
+| Ford | | | |
+| Honda | | | |
+| Nissan | NissanConnect® EV & Services | `com.aqsmartphone.android.nissan` | 8.0.4 |
+| Subaru | | | |
+| Toyota | | | |
