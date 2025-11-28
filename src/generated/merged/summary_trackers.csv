@@ -1,0 +1,79 @@
+TRACKER NAME,CATEGORIES,URL,app,source_path
+Adjust,Analytics,https://reports.exodus-privacy.eu.org/trackers/52,Acura,/home/jovyan/work/SOEN 321/car_app_analysis/Acura/trackers.csv
+Amplitude,"Profiling, Analytics",https://reports.exodus-privacy.eu.org/trackers/125,Acura,/home/jovyan/work/SOEN 321/car_app_analysis/Acura/trackers.csv
+Appdynamics,"Profiling, Analytics",https://reports.exodus-privacy.eu.org/trackers/194,Acura,/home/jovyan/work/SOEN 321/car_app_analysis/Acura/trackers.csv
+Facebook Login,Identification,https://reports.exodus-privacy.eu.org/trackers/67,Acura,/home/jovyan/work/SOEN 321/car_app_analysis/Acura/trackers.csv
+Facebook Share,,https://reports.exodus-privacy.eu.org/trackers/70,Acura,/home/jovyan/work/SOEN 321/car_app_analysis/Acura/trackers.csv
+Google CrashLytics,Crash reporting,https://reports.exodus-privacy.eu.org/trackers/27,Acura,/home/jovyan/work/SOEN 321/car_app_analysis/Acura/trackers.csv
+Google Firebase Analytics,Analytics,https://reports.exodus-privacy.eu.org/trackers/49,Acura,/home/jovyan/work/SOEN 321/car_app_analysis/Acura/trackers.csv
+Qualtrics,,https://reports.exodus-privacy.eu.org/trackers/306,Acura,/home/jovyan/work/SOEN 321/car_app_analysis/Acura/trackers.csv
+Adobe Experience Cloud,,https://reports.exodus-privacy.eu.org/trackers/229,Audi,/home/jovyan/work/SOEN 321/car_app_analysis/Audi/trackers.csv
+AltBeacon,,https://reports.exodus-privacy.eu.org/trackers/219,Audi,/home/jovyan/work/SOEN 321/car_app_analysis/Audi/trackers.csv
+Microsoft Visual Studio App Center Analytics,Analytics,https://reports.exodus-privacy.eu.org/trackers/243,Audi,/home/jovyan/work/SOEN 321/car_app_analysis/Audi/trackers.csv
+Microsoft Visual Studio App Center Crashes,Crash reporting,https://reports.exodus-privacy.eu.org/trackers/238,Audi,/home/jovyan/work/SOEN 321/car_app_analysis/Audi/trackers.csv
+"OpenTelemetry (OpenCensus, OpenTracing)",Analytics,https://reports.exodus-privacy.eu.org/trackers/412,Audi,/home/jovyan/work/SOEN 321/car_app_analysis/Audi/trackers.csv
+Countly,"Profiling, Analytics",https://reports.exodus-privacy.eu.org/trackers/122,BMW,/home/jovyan/work/SOEN 321/car_app_analysis/BMW/trackers.csv
+Google CrashLytics,Crash reporting,https://reports.exodus-privacy.eu.org/trackers/27,BMW,/home/jovyan/work/SOEN 321/car_app_analysis/BMW/trackers.csv
+Google Firebase Analytics,Analytics,https://reports.exodus-privacy.eu.org/trackers/49,BMW,/home/jovyan/work/SOEN 321/car_app_analysis/BMW/trackers.csv
+Sensors Analytics,Analytics,https://reports.exodus-privacy.eu.org/trackers/248,BMW,/home/jovyan/work/SOEN 321/car_app_analysis/BMW/trackers.csv
+WeChat Location,,https://reports.exodus-privacy.eu.org/trackers/76,BMW,/home/jovyan/work/SOEN 321/car_app_analysis/BMW/trackers.csv
+Adobe Experience Cloud,,https://reports.exodus-privacy.eu.org/trackers/229,Buick,/home/jovyan/work/SOEN 321/car_app_analysis/Buick/trackers.csv
+Brightcove,,https://reports.exodus-privacy.eu.org/trackers/178,Buick,/home/jovyan/work/SOEN 321/car_app_analysis/Buick/trackers.csv
+Dynatrace,Analytics,https://reports.exodus-privacy.eu.org/trackers/137,Buick,/home/jovyan/work/SOEN 321/car_app_analysis/Buick/trackers.csv
+Facebook Login,Identification,https://reports.exodus-privacy.eu.org/trackers/67,Buick,/home/jovyan/work/SOEN 321/car_app_analysis/Buick/trackers.csv
+Facebook Share,,https://reports.exodus-privacy.eu.org/trackers/70,Buick,/home/jovyan/work/SOEN 321/car_app_analysis/Buick/trackers.csv
+Google CrashLytics,Crash reporting,https://reports.exodus-privacy.eu.org/trackers/27,Buick,/home/jovyan/work/SOEN 321/car_app_analysis/Buick/trackers.csv
+Google Firebase Analytics,Analytics,https://reports.exodus-privacy.eu.org/trackers/49,Buick,/home/jovyan/work/SOEN 321/car_app_analysis/Buick/trackers.csv
+Instabug,Crash reporting,https://reports.exodus-privacy.eu.org/trackers/206,Buick,/home/jovyan/work/SOEN 321/car_app_analysis/Buick/trackers.csv
+"OpenTelemetry (OpenCensus, OpenTracing)",Analytics,https://reports.exodus-privacy.eu.org/trackers/412,Buick,/home/jovyan/work/SOEN 321/car_app_analysis/Buick/trackers.csv
+Adobe Experience Cloud,,https://reports.exodus-privacy.eu.org/trackers/229,Chevrolet,/home/jovyan/work/SOEN 321/car_app_analysis/Chevrolet/trackers.csv
+Brightcove,,https://reports.exodus-privacy.eu.org/trackers/178,Chevrolet,/home/jovyan/work/SOEN 321/car_app_analysis/Chevrolet/trackers.csv
+Dynatrace,Analytics,https://reports.exodus-privacy.eu.org/trackers/137,Chevrolet,/home/jovyan/work/SOEN 321/car_app_analysis/Chevrolet/trackers.csv
+Facebook Login,Identification,https://reports.exodus-privacy.eu.org/trackers/67,Chevrolet,/home/jovyan/work/SOEN 321/car_app_analysis/Chevrolet/trackers.csv
+Facebook Share,,https://reports.exodus-privacy.eu.org/trackers/70,Chevrolet,/home/jovyan/work/SOEN 321/car_app_analysis/Chevrolet/trackers.csv
+Google CrashLytics,Crash reporting,https://reports.exodus-privacy.eu.org/trackers/27,Chevrolet,/home/jovyan/work/SOEN 321/car_app_analysis/Chevrolet/trackers.csv
+Google Firebase Analytics,Analytics,https://reports.exodus-privacy.eu.org/trackers/49,Chevrolet,/home/jovyan/work/SOEN 321/car_app_analysis/Chevrolet/trackers.csv
+Instabug,Crash reporting,https://reports.exodus-privacy.eu.org/trackers/206,Chevrolet,/home/jovyan/work/SOEN 321/car_app_analysis/Chevrolet/trackers.csv
+"OpenTelemetry (OpenCensus, OpenTracing)",Analytics,https://reports.exodus-privacy.eu.org/trackers/412,Chevrolet,/home/jovyan/work/SOEN 321/car_app_analysis/Chevrolet/trackers.csv
+Google CrashLytics,Crash reporting,https://reports.exodus-privacy.eu.org/trackers/27,Ford,/home/jovyan/work/SOEN 321/car_app_analysis/Ford/trackers.csv
+Google Firebase Analytics,Analytics,https://reports.exodus-privacy.eu.org/trackers/49,Ford,/home/jovyan/work/SOEN 321/car_app_analysis/Ford/trackers.csv
+Inmobi,,https://reports.exodus-privacy.eu.org/trackers/106,Ford,/home/jovyan/work/SOEN 321/car_app_analysis/Ford/trackers.csv
+Matomo (Piwik),Analytics,https://reports.exodus-privacy.eu.org/trackers/138,Ford,/home/jovyan/work/SOEN 321/car_app_analysis/Ford/trackers.csv
+Mintegral,"Advertisement, Analytics",https://reports.exodus-privacy.eu.org/trackers/200,Ford,/home/jovyan/work/SOEN 321/car_app_analysis/Ford/trackers.csv
+Adjust,Analytics,https://reports.exodus-privacy.eu.org/trackers/52,Honda,/home/jovyan/work/SOEN 321/car_app_analysis/Honda/trackers.csv
+Amplitude,"Profiling, Analytics",https://reports.exodus-privacy.eu.org/trackers/125,Honda,/home/jovyan/work/SOEN 321/car_app_analysis/Honda/trackers.csv
+Appdynamics,"Profiling, Analytics",https://reports.exodus-privacy.eu.org/trackers/194,Honda,/home/jovyan/work/SOEN 321/car_app_analysis/Honda/trackers.csv
+Facebook Login,Identification,https://reports.exodus-privacy.eu.org/trackers/67,Honda,/home/jovyan/work/SOEN 321/car_app_analysis/Honda/trackers.csv
+Facebook Share,,https://reports.exodus-privacy.eu.org/trackers/70,Honda,/home/jovyan/work/SOEN 321/car_app_analysis/Honda/trackers.csv
+Google CrashLytics,Crash reporting,https://reports.exodus-privacy.eu.org/trackers/27,Honda,/home/jovyan/work/SOEN 321/car_app_analysis/Honda/trackers.csv
+Google Firebase Analytics,Analytics,https://reports.exodus-privacy.eu.org/trackers/49,Honda,/home/jovyan/work/SOEN 321/car_app_analysis/Honda/trackers.csv
+Qualtrics,,https://reports.exodus-privacy.eu.org/trackers/306,Honda,/home/jovyan/work/SOEN 321/car_app_analysis/Honda/trackers.csv
+Adobe Experience Cloud,,https://reports.exodus-privacy.eu.org/trackers/229,Jeep,/home/jovyan/work/SOEN 321/car_app_analysis/Jeep/trackers.csv
+Facebook Analytics,Analytics,https://reports.exodus-privacy.eu.org/trackers/66,Jeep,/home/jovyan/work/SOEN 321/car_app_analysis/Jeep/trackers.csv
+Facebook Login,Identification,https://reports.exodus-privacy.eu.org/trackers/67,Jeep,/home/jovyan/work/SOEN 321/car_app_analysis/Jeep/trackers.csv
+Facebook Share,,https://reports.exodus-privacy.eu.org/trackers/70,Jeep,/home/jovyan/work/SOEN 321/car_app_analysis/Jeep/trackers.csv
+Google CrashLytics,Crash reporting,https://reports.exodus-privacy.eu.org/trackers/27,Jeep,/home/jovyan/work/SOEN 321/car_app_analysis/Jeep/trackers.csv
+Google Firebase Analytics,Analytics,https://reports.exodus-privacy.eu.org/trackers/49,Jeep,/home/jovyan/work/SOEN 321/car_app_analysis/Jeep/trackers.csv
+"OpenTelemetry (OpenCensus, OpenTracing)",Analytics,https://reports.exodus-privacy.eu.org/trackers/412,Jeep,/home/jovyan/work/SOEN 321/car_app_analysis/Jeep/trackers.csv
+Salesforce Marketing Cloud,,https://reports.exodus-privacy.eu.org/trackers/220,Jeep,/home/jovyan/work/SOEN 321/car_app_analysis/Jeep/trackers.csv
+SAP CDC (Gigya),Analytics,https://reports.exodus-privacy.eu.org/trackers/148,Jeep,/home/jovyan/work/SOEN 321/car_app_analysis/Jeep/trackers.csv
+Google Firebase Analytics,Analytics,https://reports.exodus-privacy.eu.org/trackers/49,Kia,/home/jovyan/work/SOEN 321/car_app_analysis/Kia/trackers.csv
+Countly,"Profiling, Analytics",https://reports.exodus-privacy.eu.org/trackers/122,Mercedes,/home/jovyan/work/SOEN 321/car_app_analysis/Mercedes/trackers.csv
+Google CrashLytics,Crash reporting,https://reports.exodus-privacy.eu.org/trackers/27,Mercedes,/home/jovyan/work/SOEN 321/car_app_analysis/Mercedes/trackers.csv
+Google Firebase Analytics,Analytics,https://reports.exodus-privacy.eu.org/trackers/49,Mercedes,/home/jovyan/work/SOEN 321/car_app_analysis/Mercedes/trackers.csv
+Sensors Analytics,Analytics,https://reports.exodus-privacy.eu.org/trackers/248,Mercedes,/home/jovyan/work/SOEN 321/car_app_analysis/Mercedes/trackers.csv
+WeChat Location,,https://reports.exodus-privacy.eu.org/trackers/76,Mercedes,/home/jovyan/work/SOEN 321/car_app_analysis/Mercedes/trackers.csv
+Demdex,Analytics,https://reports.exodus-privacy.eu.org/trackers/40,Nissan,/home/jovyan/work/SOEN 321/car_app_analysis/Nissan/trackers.csv
+Google CrashLytics,Crash reporting,https://reports.exodus-privacy.eu.org/trackers/27,Nissan,/home/jovyan/work/SOEN 321/car_app_analysis/Nissan/trackers.csv
+Google Firebase Analytics,Analytics,https://reports.exodus-privacy.eu.org/trackers/49,Nissan,/home/jovyan/work/SOEN 321/car_app_analysis/Nissan/trackers.csv
+Adobe Experience Cloud,,https://reports.exodus-privacy.eu.org/trackers/229,Subaru,/home/jovyan/work/SOEN 321/car_app_analysis/Subaru/trackers.csv
+Google Firebase Analytics,Analytics,https://reports.exodus-privacy.eu.org/trackers/49,Subaru,/home/jovyan/work/SOEN 321/car_app_analysis/Subaru/trackers.csv
+Google CrashLytics,Crash reporting,https://reports.exodus-privacy.eu.org/trackers/27,Tesla,/home/jovyan/work/SOEN 321/car_app_analysis/Tesla/trackers.csv
+Google Firebase Analytics,Analytics,https://reports.exodus-privacy.eu.org/trackers/49,Tesla,/home/jovyan/work/SOEN 321/car_app_analysis/Tesla/trackers.csv
+Sentry,Crash reporting,https://reports.exodus-privacy.eu.org/trackers/447,Tesla,/home/jovyan/work/SOEN 321/car_app_analysis/Tesla/trackers.csv
+Apptentive,Analytics,https://reports.exodus-privacy.eu.org/trackers/115,Toyota,/home/jovyan/work/SOEN 321/car_app_analysis/Toyota/trackers.csv
+Google AdMob,Advertisement,https://reports.exodus-privacy.eu.org/trackers/312,Toyota,/home/jovyan/work/SOEN 321/car_app_analysis/Toyota/trackers.csv
+Google CrashLytics,Crash reporting,https://reports.exodus-privacy.eu.org/trackers/27,Toyota,/home/jovyan/work/SOEN 321/car_app_analysis/Toyota/trackers.csv
+Google Firebase Analytics,Analytics,https://reports.exodus-privacy.eu.org/trackers/49,Toyota,/home/jovyan/work/SOEN 321/car_app_analysis/Toyota/trackers.csv
+Optimizely,Analytics,https://reports.exodus-privacy.eu.org/trackers/172,Toyota,/home/jovyan/work/SOEN 321/car_app_analysis/Toyota/trackers.csv
+Salesforce Marketing Cloud,,https://reports.exodus-privacy.eu.org/trackers/220,Toyota,/home/jovyan/work/SOEN 321/car_app_analysis/Toyota/trackers.csv
