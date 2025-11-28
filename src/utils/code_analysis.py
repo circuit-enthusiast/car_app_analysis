@@ -1,4 +1,4 @@
-# Code reused from network_analysis.py
+# Code taken from network_analysis.py
 ######################################
 
 from collections.abc import Mapping
@@ -25,11 +25,8 @@ def handle_score_code_analysis(dataframe: pd.DataFrame) -> dict[str, int]:
     if "SEVERITY" not in dataframe.columns and "severity" not in dataframe.columns:
         return {"unknown": len(dataframe)}
 
-    # accept either uppercase or lowercase column
     if "SEVERITY" in dataframe.columns:
         sev_col = dataframe["SEVERITY"]
-    else:
-        sev_col = dataframe["severity"]
 
     # normalize severity values
     sev_series = sev_col.fillna("unknown").astype(str).str.strip().str.lower()
@@ -76,14 +73,11 @@ def save_code_bar_chart(
 
     # build stacked values per severity
     values_by_sev = {sev: [counts[m].get(sev, 0) for m in manufacturers] for sev in severities}
-
     x_positions = list(range(len(manufacturers)))
-
     fig, ax = plt.subplots(figsize=(max(6, len(manufacturers) * 0.9), 5))
 
     # choose a color palette (extendable)
     palette = ["#d62728", "#ff7f0e", "#2b77ae", "#abf301", "#9467bd", "#8c564b"]
-    # map severities to colors deterministically
     colors = {sev: palette[i % len(palette)] for i, sev in enumerate(severities)}
 
     bottom = [0] * len(manufacturers)
@@ -92,6 +86,7 @@ def save_code_bar_chart(
         ax.bar(x_positions, vals, bottom=bottom, color=colors.get(sev), label=sev)
         bottom = [b + v for b, v in zip(bottom, vals)]
 
+    # plot
     ax.set_ylabel("Findings count")
     ax.set_title("Code analysis findings per manufacturer (by severity)")
     ax.set_xticks(x_positions, manufacturers, rotation=45, ha="right")
@@ -126,8 +121,8 @@ def save_code_summary_csv(counts: Mapping[str, Mapping[str, int]], output_path: 
                 "score": score,
             }
         )
-
     df = pd.DataFrame(rows)
+
     # ensure consistent column order
     df = df[["manufacturer", "high", "medium", "normal", "total", "score"]]
     output_path.parent.mkdir(parents=True, exist_ok=True)
