@@ -29,7 +29,7 @@ This repository aggregates static analysis data for a corpus of North American a
 | BMW | My BMW | `de.bmw.connected.mobile20.na` | 5.9.4 |
 | Buick | myBuick | `com.gm.buick.nomad.ownership` | 6.25.0 |
 | Ford | FordPass | `https://fordpass.en.uptodown.com` | 6.9.4 |
-| Honda | | | |
+| Honda | HondaLink | `com.honda.hondalink.connect` | 5.0.46 |
 | Nissan | NissanConnect® EV & Services | `com.aqsmartphone.android.nissan` | 8.0.4 |
-| Subaru | | | |
+| Subaru | MySubaru |`com.subaru.telematics.app.remote` | 3.2.1 |
 | Toyota | myToyota | `com.toyota.oneapp.eu` | 2.8.1 |
