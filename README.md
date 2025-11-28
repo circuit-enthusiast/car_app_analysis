@@ -1,11 +1,19 @@
 # car_app_analysis
 
 ## Overview
-This repository aggregates static analysis data for a corpus of North American automotive companion applications drawn from the Mozilla Foundation's *Privacy Not Included* study. Each application directory stores CSV exports from Mobile Security Framework (MobSF) runs, while the `scripts/` directory will host Python utilities to normalize the data, score risk, and generate comparative charts. 
+This repository aggregates static analysis data for a corpus of North American automotive companion applications drawn from the Mozilla Foundation's *Privacy Not Included* study. Each application directory stores CSV exports from Mobile Security Framework (MobSF) runs, while the Python utilities now live in the `src/` directory to normalize the data, score risk, and generate comparative charts. 
 
 ## Repository layout
 - `*/application_permissions.csv`, `*/manifest_analysis.csv`, `*/network_security.csv`, etc.: Raw MobSF CSV exports for each application (e.g., `Audi/`, `Kia/`, `Jeep/`, `Tesla/`).
-- `scripts/`: Python scripts for data parsing
+- `src/main.py`: Batch runner that iterates through every analytics module (trackers, application permissions, certificate security, network security, and the Mozilla PNI scraper) and kicks off report generation.
+- `src/apps.py`: Defines the canonical list of manufacturer directories and exposes `available_apps()` so every analysis only touches folders that actually exist in the checkout.
+- `src/utils/`: Purpose-built analyzers, each with a `generate_*` entry point. Highlights:
+  - `application_permissions.py`: Loads each `application_permissions.csv`, summarizes MobSF risk classifications with `pandas`, and writes both `permissions_summary.csv` plus the stacked/risk mix/score PNG charts under `src/generated/permissions/`.
+  - `trackers.py`: Counts rows in every `trackers.csv` file and produces `tracker_counts.png` so we can quickly compare embedded SDK usage per manufacturer.
+  - `certificate_analysis.py` & `network_analysis.py`: Collapse MobSF severity columns from `certificate_analysis.csv` and `network_security.csv`, convert them into weighted scores via `scoring.py`, and emit both summary CSVs and stacked bar charts (`src/generated/certificates/` and `src/generated/network/`).
+  - `pni_scoring.py`: Scrapes the Mozilla *Privacy Not Included* site with `BeautifulSoup`, calculates privacy grades, and exports the bar chart (`pni_scores.png`), CSV summary, and full JSON dataset in `src/generated/pni/`.
+  - `scoring.py`: Shared helpers that normalize severity labels, tally risk buckets, and compute weighted scores that the other modules reuse.
+- `src/generated/`: Output tree created by the analyzers (e.g., `permissions/`, `trackers/`, `certificates/`, `network/`, `pni/`), containing the derived CSVs, PNG charts, and JSON artifacts described above.
 
 ## App corpus selection
 
